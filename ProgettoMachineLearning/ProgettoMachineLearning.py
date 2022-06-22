@@ -149,32 +149,42 @@ while informazione > 0.50:
 
     #5--------------------------------------------------------------------------------------------------------
     #addestro modello SVC
+    print("SVC")
     c=0.1
-    valoriLassoTestL1=[]
-    valoriLassoTestL2=[]
+    valoriSVCTestL1=[]
+    valoriSVCTestL2=[]
     for i in range(4):
 
         modelloSVCl2=LinearSVC(penalty='l2',C=c)
-        modelloSVCl1=LinearSVC(penalty='l1',C=c)
+        modelloSVCl1=LinearSVC(penalty={'l1'},C=c)
         modelloSVCl2.fit(x_reduced_pca,y_train)
-        modelloSVCl1.fit(x_reduced_pca,y_train)
+        #modelloSVCl1.fit(x_reduced_pca,y_train)
 
         #valutazione 
         print("C",c)
         val2=modelloSVCl2.score(x_reduced_test_pca,y_test)
-        val1=modelloSVCl1.score(x_reduced_test_pca,y_test)
-        print("Accuracy score test Lasso reg L2:",val2)
-        print("Accuracy score test Lasso reg L1:",val1)
-        valoriLassoTestL2.append(val2)
-        valoriLassoTestL1.append(val1)
-        print("Accuracy score training Lasso reg L2:",modelloSVCl2.score(x_reduced_pca,y_train))
-        print("Accuracy score training Lasso reg L1:",modelloSVCl1.score(x_reduced_pca,y_train))
+        #val1=modelloSVCl1.score(x_reduced_test_pca,y_test)
+        print("Accuracy score test SVC reg L2:",val2)
+        #print("Accuracy score test SVC reg L1:",val1)
+        valoriSVCTestL2.append(val2)
+        #valoriSVCTestL1.append(val1)
+        print("Accuracy score training SVC reg L2:",modelloSVCl2.score(x_reduced_pca,y_train))
+        #print("Accuracy score training SVC reg L1:",modelloSVCl1.score(x_reduced_pca,y_train))
         print("\n")
         c=c*10
 
     informazione-=0.10
 
 
+plt.plot([0.1,1,10,100],valoriLogisticTest,color="blue",label="Logistic")
+plt.plot([0.1,1,10,100],valoriRidgeTest,color="black",label="Ridge")
+plt.plot([0.1,1,10,100],valoriLassoTest,color="green",label="Lasso")
+#plt.plot([0.1,1,10,100],valoriSVCTestL1,color="red")
+plt.plot([0.1,1,10,100],valoriSVCTestL2,color="yellow",label="SVCL2")
+plt.xlabel("fitting")
+plt.ylabel("Value")
+plt.legend(loc="lower right", title="Legend Title")
+plt.show()
 
 
 
