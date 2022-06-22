@@ -156,7 +156,7 @@ while informazione > 0.50:
     for i in range(4):
 
         modelloSVCl2=LinearSVC(penalty='l2',C=c)
-        modelloSVCl1=LinearSVC(penalty={'l1'},C=c)
+        modelloSVCl1=LinearSVC(penalty='l1',C=c)
         modelloSVCl2.fit(x_reduced_pca,y_train)
         #modelloSVCl1.fit(x_reduced_pca,y_train)
 
