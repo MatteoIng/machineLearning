@@ -26,13 +26,14 @@ y=heart[:]["target"].values
 #split in train e test di x e y in 80/20
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
 
-print("x_train:\n",x_train)
-print("x_test:\n",x_test)
-print("y_train:\n",y_train)
-print("y_test:\n",y_test)
+#print("x_train:\n",x_train)
+#print("x_test:\n",x_test)
+#print("y_train:\n",y_train)
+#print("y_test:\n",y_test)
 
 scaler = StandardScaler()
-x_train = scaler.fit_transform(x_train)
+scaler.fit(x_train)
+x_train = scaler.transform(x_train)
 x_test = scaler.transform(x_test)
 
 
@@ -41,19 +42,20 @@ x_test = scaler.transform(x_test)
 #Riduzione dimensionalità
 informazione=1.0
 
-while informazione > 0.50:
+while informazione > 0.75:
 
     pca = PCA()
     pca.fit(x_train)
     cumsum = np.cumsum(pca.explained_variance_ratio_)
     d = np.argmax(cumsum >= informazione) + 1
 
-    print("Numero dimensionalita' usate {} con una conservazione del {}% dell'informazione".format(d,informazione*100))
-
+    print("---------Numero dimensionalita' usate {} con una conservazione del {}% dell'informazione -------------\n".format(d,informazione*100))
+    
     pca = PCA(n_components=d)
     x_reduced_pca = pca.fit_transform(x_train)
     x_reduced_test_pca=pca.fit_transform(x_test)
 
+ 
 
     #1--------------------------------------------------------------------------------------------------------
     #addestro modello lineare 
@@ -85,13 +87,7 @@ while informazione > 0.50:
         print("\n")
         c=c*10
 
-    #plt.scatter([0.1,1.1,2.1,3.1,4.1,5.1,6.1,7.1,8.1,9.1,10.1],valoriLogisticTest,color="black")
-    #plt.plot([0.1,1.1,2.1,3.1,4.1,5.1,6.1,7.1,8.1,9.1,10.1],valoriLogisticTest,color="blue")
-    #plt.xticks(())
-    #plt.yticks(())
-    #plt.show()
-
-
+   
 
 
     #3--------------------------------------------------------------------------------------------------------
@@ -113,12 +109,7 @@ while informazione > 0.50:
         print("Accuracy score training ridge reg:",modelloRidge.score(x_reduced_pca,y_train))
         print("\n")
         a=a*10
-
-    #plt.scatter([0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],valoriRidgeTest,color="black")
-    #plt.plot([0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],valoriRidgeTest,color="blue")
-    #plt.xticks(())
-    #plt.yticks(())
-    #plt.show()
+        
 
 
     #4--------------------------------------------------------------------------------------------------------
@@ -140,12 +131,7 @@ while informazione > 0.50:
         print("\n")
         a=a*10
 
-    #plt.scatter([0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],valoriLassoTest,color="black")
-    #plt.plot([0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],valoriLassoTest,color="blue")
-    #plt.xticks(())
-    #plt.yticks(())
-    #plt.show()
-
+ 
 
     #5--------------------------------------------------------------------------------------------------------
     #addestro modello SVC
@@ -173,7 +159,8 @@ while informazione > 0.50:
         print("\n")
         c=c*10
 
-    informazione-=0.10
+    informazione-=0.03
+    print("\n")
 
 
 plt.plot([0.1,1,10,100],valoriLogisticTest,color="blue",label="Logistic")
