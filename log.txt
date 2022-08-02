@@ -1,0 +1,506 @@
+---------Numero dimensionalita' usate 11 con una conservazione del 90.0% dell'informazione -------------
+
+MODELLO LINEARE
+Accuracy score test linear reg: 0.1523475390612956
+Accuracy score training linear reg: 0.5196613851434475
+
+
+LOGISTIC REGRESSION
+C: 0.1
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8388429752066116
+
+
+C: 1.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8388429752066116
+
+
+C: 10.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8347107438016529
+
+
+C: 100.0
+Accuracy score test logistic reg: 0.6557377049180327
+Accuracy score training logistic reg: 0.8347107438016529
+
+
+LINEAR REGRESSION COSTO RIDGE
+ALPHA 0.1
+Accuracy score test ridge reg: 0.1524260791809009
+Accuracy score training ridge reg: 0.5196613656958629
+
+
+ALPHA 1.0
+Accuracy score test ridge reg: 0.1531295997992952
+Accuracy score training ridge reg: 0.5196594502418266
+
+
+ALPHA 10.0
+Accuracy score test ridge reg: 0.15984661203590445
+Accuracy score training ridge reg: 0.5194772197253336
+
+
+ALPHA 100.0
+Accuracy score test ridge reg: 0.20398494135789502
+Accuracy score training ridge reg: 0.5072869135186839
+
+
+LINEAR REGRESSION LASSO
+C:\Users\MATTEO\Desktop\Programmi\Python\ProgettoMachineLearning\ProgettoMachineLearning\ProgettoMachineLearning.py:136: UserWarning: With alpha=0, this algorithm does not converge well. You are advised to use the LinearRegression estimator
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: UserWarning: Coordinate descent with no regularization may lead to unexpected results and is discouraged.
+  model = cd_fast.enet_coordinate_descent(
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.436e+01, tolerance: 5.980e-03 Linear regression models with null weight for the l1 regularization term are more efficiently fitted using one of the solvers implemented in sklearn.linear_model.Ridge/RidgeCV instead.
+  model = cd_fast.enet_coordinate_descent(
+ALPHA 0.1
+Accuracy score test Lasso reg: 0.1523475390612945
+Accuracy score training Lasso reg: 0.5196613851434474
+
+
+ALPHA 1.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 10.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 100.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+SVC
+C 0.1
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8388429752066116
+
+
+C 1.0
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8429752066115702
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 10.0
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8429752066115702
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 100.0
+Accuracy score test SVC reg L2: 0.6557377049180327
+Accuracy score training SVC reg L2: 0.8223140495867769
+
+
+
+
+---------Numero dimensionalita' usate 10 con una conservazione del 87.0% dell'informazione -------------
+
+MODELLO LINEARE
+Accuracy score test linear reg: 0.15247164576072014
+Accuracy score training linear reg: 0.5196441102700324
+
+
+LOGISTIC REGRESSION
+C: 0.1
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8429752066115702
+
+
+C: 1.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8305785123966942
+
+
+C: 10.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8305785123966942
+
+
+C: 100.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8305785123966942
+
+
+LINEAR REGRESSION COSTO RIDGE
+ALPHA 0.1
+Accuracy score test ridge reg: 0.15255008313076546
+Accuracy score training ridge reg: 0.5196440908329616
+
+
+ALPHA 1.0
+Accuracy score test ridge reg: 0.15325268657763647
+Accuracy score training ridge reg: 0.5196421764051857
+
+
+ALPHA 10.0
+Accuracy score test ridge reg: 0.15996121991830203
+Accuracy score training ridge reg: 0.5194600354546672
+
+
+ALPHAC:\Users\MATTEO\Desktop\Programmi\Python\ProgettoMachineLearning\ProgettoMachineLearning\ProgettoMachineLearning.py:136: UserWarning: With alpha=0, this algorithm does not converge well. You are advised to use the LinearRegression estimator
+ 100.0
+Accuracy score test ridge reg: 0.2040527622703966
+Accuracy score training ridge reg: 0.507272959372736
+
+
+LINEAR REGRESSION LASSO
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: UserWarning: Coordinate descent with no regularization may lead to unexpected results and is discouraged.
+  model = cd_fast.enet_coordinate_descent(
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.436e+01, tolerance: 5.980e-03 Linear regression models with null weight for the l1 regularization term are more efficiently fitted using one of the solvers implemented in sklearn.linear_model.Ridge/RidgeCV instead.
+  model = cd_fast.enet_coordinate_descent(
+ALPHA 0.1
+Accuracy score test Lasso reg: 0.15247164576072048
+Accuracy score training Lasso reg: 0.5196441102700322
+
+
+ALPHA 1.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 10.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 100.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+SVC
+C 0.1
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8347107438016529
+
+
+C 1.0
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8347107438016529
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 10.0
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8347107438016529
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 100.0
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.8347107438016529
+
+
+
+
+---------Numero dimensionalita' usate 9 con una conservazione del 84.0% dell'informazione -------------
+
+MODELLO LINEARE
+Accuracy score test linear reg: 0.1520259749620212
+Accuracy score training linear reg: 0.5158362278745904
+
+
+LOGISTIC REGRESSION
+C: 0.1
+Accuracy score test logistic reg: 0.6885245901639344
+Accuracy score training logistic reg: 0.8512396694214877
+
+
+C: 1.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8512396694214877
+
+
+C: 10.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+C: 100.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+LINEAR REGRESSION COSTO RIDGE
+ALPHA 0.1
+Accuracy score test ridge reg: 0.1521032904361631
+Accuracy score training ridge reg: 0.5158362100000394
+
+
+ALPHA 1.0
+Accuracy score test ridge reg: 0.15279594133927032
+Accuracy score training ridge reg: 0.5158344484755373
+
+
+ALPHA 10.0
+Accuracy score test ridge reg: 0.15941794241029228
+Accuracy score training ridge reg: 0.5156659702025532
+
+
+ALPHA 100.0
+Accuracy score test ridge reg: 0.20325786615445107
+Accuracy score training ridge reg: 0.5040460711350996
+
+
+LINEAR REGRESSION LASSO
+C:\Users\MATTEO\Desktop\Programmi\Python\ProgettoMachineLearning\ProgettoMachineLearning\ProgettoMachineLearning.py:136: UserWarning: With alpha=0, this algorithm does not converge well. You are advised to use the LinearRegression estimator
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: UserWarning: Coordinate descent with no regularization may lead to unexpected results and is discouraged.
+  model = cd_fast.enet_coordinate_descent(
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.448e+01, tolerance: 5.980e-03 Linear regression models with null weight for the l1 regularization term are more efficiently fitted using one of the solvers implemented in sklearn.linear_model.Ridge/RidgeCV instead.
+  model = cd_fast.enet_coordinate_descent(
+ALPHA 0.1
+Accuracy score test Lasso reg: 0.15202597496202142
+Accuracy score training Lasso reg: 0.5158362278745903
+
+
+ALPHA 1.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 10.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 100.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+SVC
+C 0.1
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.8553719008264463
+
+
+C 1.0
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.8553719008264463
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 10.0
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.859504132231405
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 100.0
+Accuracy score test SVC reg L2: 0.7213114754098361
+Accuracy score training SVC reg L2: 0.7892561983471075
+
+
+
+
+---------Numero dimensionalita' usate 9 con una conservazione del 81.0% dell'informazione -------------
+
+MODELLO LINEARE
+Accuracy score test linear reg: 0.1520259749620212
+Accuracy score training linear reg: 0.5158362278745904
+
+
+LOGISTIC REGRESSION
+C: 0.1
+Accuracy score test logistic reg: 0.6885245901639344
+Accuracy score training logistic reg: 0.8512396694214877
+
+
+C: 1.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8512396694214877
+
+
+C: 10.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+C: 100.0
+Accuracy score test logistic reg: 0.7049180327868853
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+LINEAR REGRESSION COSTO RIDGE
+ALPHA 0.1
+Accuracy score test ridge reg: 0.1521032904361631
+Accuracy score training ridge reg: 0.5158362100000394
+
+
+ALPHA 1.0
+Accuracy score test ridge reg: 0.15279594133927032
+Accuracy score training ridge reg: 0.5158344484755373
+
+
+ALPHA 10.0
+Accuracy score test ridge reg: 0.15941794241029228
+Accuracy score training ridge reg: 0.5156659702025532
+
+
+ALPHA 100.0
+Accuracy score test ridge reg: 0.20325786615445107
+Accuracy score training ridge reg:C:\Users\MATTEO\Desktop\Programmi\Python\ProgettoMachineLearning\ProgettoMachineLearning\ProgettoMachineLearning.py:136: UserWarning: With alpha=0, this algorithm does not converge well. You are advised to use the LinearRegression estimator
+ 0.5040460711350996
+
+
+LINEAR REGRESSION LASSO
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: UserWarning: Coordinate descent with no regularization may lead to unexpected results and is discouraged.
+  model = cd_fast.enet_coordinate_descent(
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.448e+01, tolerance: 5.980e-03 Linear regression models with null weight for the l1 regularization term are more efficiently fitted using one of the solvers implemented in sklearn.linear_model.Ridge/RidgeCV instead.
+  model = cd_fast.enet_coordinate_descent(
+ALPHA 0.1
+Accuracy score test Lasso reg: 0.15202597496202142
+Accuracy score training Lasso reg: 0.5158362278745903
+
+
+ALPHA 1.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 10.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 100.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+SVC
+C 0.1
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.8553719008264463
+
+
+C 1.0
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.8553719008264463
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 10.0
+Accuracy score test SVC reg L2: 0.7049180327868853
+Accuracy score training SVC reg L2: 0.859504132231405
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 100.0
+Accuracy score test SVC reg L2: 0.6065573770491803
+Accuracy score training SVC reg L2: 0.7644628099173554
+
+
+
+
+---------Numero dimensionalita' usate 8 con una conservazione del 77.99999999999999% dell'informazione -------------
+
+MODELLO LINEARE
+Accuracy score test linear reg: 0.14869548091127638
+Accuracy score training linear reg: 0.5112743894345062
+
+
+LOGISTIC REGRESSION
+C: 0.1
+Accuracy score test logistic reg: 0.6885245901639344
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+C: 1.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8429752066115702
+
+
+C: 10.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+C: 100.0
+Accuracy score test logistic reg: 0.6721311475409836
+Accuracy score training logistic reg: 0.8471074380165289
+
+
+LINEAR REGRESSION COSTO RIDGE
+ALPHA 0.1
+Accuracy score test ridge reg: 0.1487727900879552
+Accuracy score training ridge reg: 0.5112743731603029
+
+
+ALPHA 1.0
+Accuracy score test ridge reg: 0.14946548902173906
+Accuracy score training ridge reg: 0.5112727683775918
+
+
+ALPHA 10.0
+Accuracy score test ridge reg: 0.15609720749856104
+Accuracy score training ridge reg: 0.5111184114970815
+
+
+ALPHA 100.0
+Accuracy score test ridge reg: 0.20038559397626343
+Accuracy score training ridge reg: 0.5001159038802286
+
+
+LINEAR REGRESSION LASSO
+C:\Users\MATTEO\Desktop\Programmi\Python\ProgettoMachineLearning\ProgettoMachineLearning\ProgettoMachineLearning.py:136: UserWarning: With alpha=0, this algorithm does not converge well. You are advised to use the LinearRegression estimator
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: UserWarning: Coordinate descent with no regularization may lead to unexpected results and is discouraged.
+  model = cd_fast.enet_coordinate_descent(
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:647: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.461e+01, tolerance: 5.980e-03 Linear regression models with null weight for the l1 regularization term are more efficiently fitted using one of the solvers implemented in sklearn.linear_model.Ridge/RidgeCV instead.
+  model = cd_fast.enet_coordinate_descent(
+ALPHA 0.1
+Accuracy score test Lasso reg: 0.1486954809112765
+Accuracy score training Lasso reg: 0.5112743894345062
+
+
+ALPHA 1.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 10.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+ALPHA 100.0
+Accuracy score test Lasso reg: -0.008291342694289883
+Accuracy score training Lasso reg: 0.0
+
+
+SVC
+C 0.1
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8429752066115702
+
+
+C 1.0
+Accuracy score test SVC reg L2: 0.6721311475409836
+Accuracy score training SVC reg L2: 0.8429752066115702
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 10.0
+Accuracy score test SVC reg L2: 0.6885245901639344
+Accuracy score training SVC reg L2: 0.8471074380165289
+
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\lib\site-packages\sklearn\svm\_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+C 100.0
+Accuracy score test SVC reg L2: 0.7213114754098361
+Accuracy score training SVC reg L2: 0.756198347107438

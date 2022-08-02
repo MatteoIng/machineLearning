@@ -54,7 +54,7 @@ featuresLinear=[]
 informazione=0.90
 while informazione > 0.75:
 
-    #Riduzione dimensionalità
+    #Riduzione dimensionalitï¿½
     pca = PCA()
     pca.fit(x_train)
     cumsum = np.cumsum(pca.explained_variance_ratio_)
